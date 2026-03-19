@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Description: Link dotfiles to home directory
+
+mkdir -p ~/.config
+
+ln -sf ~/dotfiles/bashrc ~/.bashrc
+ln -sf ~/dotfiles/vimrc ~/.vimrc
+ln -sf ~/dotfiles/starship.toml ~/.config/starship.toml
+ln -sf ~/dotfiles/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+ln -sf ~/dotfiles/niri/config.kdl ~/.config/niri/config.kdl
+ln -sf ~/dotfiles/swaylock/config ~/.config/swaylock/config
+ln -sf ~/dotfiles/systemd/user/swaybg.service ~/.config/systemd/user/swaybg.service
+
+echo "Dotfiles linked!"
